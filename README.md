@@ -1,65 +1,282 @@
-Raptoreum Core Latest v2.0.3
-===========================
+# **Elbanna.org - God Money Coin (GMC)**  
 
-|CI|master|develop|
-|-|-|-|
+## **Abstract**  
+Elbanna.org introduces **God Money Coin (GMC)**, a decentralized blockchain designed for fairness, speed, and infinite scalability. By utilizing the **GhostRider algorithm**, enhanced with **Kaspa's DAG-based speed** and orphan-free architecture, GMC delivers real-time transaction finality without block delays. The consensus model removes the concept of "block time" entirely, enabling seamless performance.
 
-The name Raptoreum is derived from the Victorian term for a bird of prey and ium/eum place for a pertaining to in this case birds of prey. The name comes from the team’s extensive experience in the security field with top level skills covering all aspects of it. This is a unique strength in the crypto community and will leverage well into a successful project.
+To ensure sustainability and fairness, GMC employs:  
+- **CPU-only mining** with a **kill switch** for miners exceeding **1,000 KH/s**.  
+- A **Doge-like supply model** with infinite rewards fixed at **1,000 GMC per block**.  
+- Integrated **smart contracts**, asset creation, NFTs, data transfers, and secure decentralized email.  
 
-Introduction
-Raptoreum began as the fairly simple idea, introducing smart contracts which would allow on chain, trustless transfers (goodbye centralized marketplaces) on the Ravencoin codebase, however with the automation of assets and RTM (Raptoreum).
-The project has quickly evolved, adding innovative features that not only further expand the asset layer, but also introduce features that could help other Blockchain projects. Ravencoin unfortunately suffered several serious breaches of its asset layer so that code base has been abandoned by us. We are currently working with and building on Raptoreum code expending its capabilities significantly.
+GMC also features **.bit decentralized DNS domains**, improving decentralization and Web3 usability. Partnerships are planned with **Namecoin** and **Nervos Network** to enhance adoption.  
 
-Raptoreum is now a code fork of Dash and inherits current and optionally future features such as chain locks, oracles etc. We are further expanding capabilities by adding the following features:
-A)	The deployment of a unique asset layer.
-B)	The option to lock X amount of coins or assets into a special transaction. Coins are unlocked at a block number of choice or timestamp.
-C)	Trustless on chain transfers of assets and native coins VIA Smart Contracts.
-D)	Integrating, developing and deploying a VM protocol that would allow for smart contracts in 4 major programming languages as opposed to the situation with Ethereum being limited to solidity.
+---
 
-These additional features open up the power and ease of use of Raptoreum’s features to a greater variety of industries under the Distributed Application umbrella. DAPP's are a critical part of driving widespread adoption as recently seen with DEFI and Raptoreum hopes to help provide further alternatives and possibilities for DAPP developers particularly in the field of opening up new programming languages for DAPP and contract development.
+## **Core Features**  
 
-It is one of our goals to not only innovate ideas for Raptoreum but to contribute back to the general crypto community with open-source features that anybody can use to help their Blockchain projects succeed.
+### **1. Real-Time, Orphan-Free Consensus**  
+- Built on the **GhostRider algorithm**, optimized with **Kaspa's DAG technology**.  
+- Ensures transactions are processed in **real time** with zero orphan blocks.  
+- The removal of "block time" creates a timeless, high-speed consensus mechanism.
 
+---
 
-License
--------
+### **2. Fair and Decentralized Mining**  
+- **CPU-only Mining**: ASICs and GPUs are **automatically rejected**.  
+- **Kill Switch**: Mining addresses exceeding **1,000 KH/s** are disabled to maintain fairness.  
+- Designed to prevent centralization, ensuring mining remains accessible to everyone worldwide.
 
-Raptoreum Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+---
 
-Development Process
--------------------
+### **3. Sustainable Infinite Supply**  
+- Rewards are fixed at **1,000 GMC per block**.  
+- No halving events. Supply remains infinite, modeled after **DogeCoin** to sustain global adoption.  
 
-The `master` branch is meant to be stable. Development is done in separate branches.
-[Tags](https://github.com/raptor3um/raptoreum/tags) are created to indicate new official,
-stable release versions of Raptoreum Core.
+---
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+### **4. Integrated Smart Contracts**  
+Supports **LVMP-based smart contracts** for:  
+- **Asset Creation**: Launch and manage fungible/non-fungible tokens (NFTs).  
+- **Data Transfers**: Seamless on-chain data transactions.  
+- **NFT Marketplace**: Mint, transfer, and trade NFTs on the GMC blockchain.  
+- **Decentralized Email**: Secure messaging embedded into the blockchain network.  
 
-Testing
--------
+---
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+### **5. Decentralized DNS (.bit Domains)**  
+- **.bit domains** provide decentralized alternatives to traditional domain names.  
+- Designed for seamless Web3 integration.  
+- Planned partnerships with **Namecoin** and **Nervos Network** to enhance interoperability.  
 
-### Automated Testing
+---
 
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
+## **Technical Specifications**  
 
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
+| **Parameter**          | **Specification**                     |  
+|-------------------------|---------------------------------------|  
+| **Consensus Algorithm** | GhostRider with DAG-based optimization |  
+| **Block Reward**        | 1,000 GMC per block (fixed, infinite) |  
+| **Mining Method**       | CPU-only, 1,000 KH/s kill switch      |  
+| **Supply Model**        | Infinite supply, Doge-like            |  
+| **Smart Contracts**     | LVMP-based; supports assets, NFTs, data transfers |  
+| **DNS Integration**     | .bit domains for decentralized naming |  
 
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
+---
 
-### Manual Quality Assurance (QA) Testing
+## **Fairness Mechanism**  
+GMC ensures mining remains **fair and decentralized**:  
+- **CPU-Only Enforcement**: GPUs and ASICs are rejected from the network.  
+- **Anti-Overpower Kill Switch**: Addresses exceeding **1,000 KH/s** are temporarily disabled.  
+- Keeps mining open to all individuals globally without allowing centralized control.
 
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+---
+
+## **Conclusion**  
+Elbanna.org’s GMC creates a **timeless, decentralized, and fair blockchain** built for the modern era. By removing block time, integrating orphan-free DAG speed, and prioritizing global accessibility with CPU-only mining, GMC redefines blockchain sustainability and scalability. Smart contracts# **Elbanna.org - God Money Coin (GMC)**  
+
+## **Abstract**  
+Elbanna.org introduces **God Money Coin (GMC)**, a decentralized blockchain designed for fairness, speed, and infinite scalability. By utilizing the **GhostRider algorithm**, enhanced with **Kaspa's DAG-based speed** and orphan-free architecture, GMC delivers real-time transaction finality without block delays. The consensus model removes the concept of "block time" entirely, enabling seamless performance.
+
+To ensure sustainability and fairness, GMC employs:  
+- **CPU-only mining** with a **kill switch** for miners exceeding **1,000 KH/s**.  
+- A **Doge-like supply model** with infinite rewards fixed at **1,000 GMC per block**.  
+- Integrated **smart contracts**, asset creation, NFTs, data transfers, and secure decentralized email.  
+
+GMC also features **.bit decentralized DNS domains**, improving decentralization and Web3 usability. Partnerships are planned with **Namecoin** and **Nervos Network** to enhance adoption.  
+
+---
+
+## **Core Features**  
+
+### **1. Real-Time, Orphan-Free Consensus**  
+- Built on the **GhostRider algorithm**, optimized with **Kaspa's DAG technology**.  
+- Ensures transactions are processed in **real time** with zero orphan blocks.  
+- The removal of "block time" creates a timeless, high-speed consensus mechanism.
+
+---
+
+### **2. Fair and Decentralized Mining**  
+- **CPU-only Mining**: ASICs and GPUs are **automatically rejected**.  
+- **Kill Switch**: Mining addresses exceeding **1,000 KH/s** are disabled to maintain fairness.  
+- Designed to prevent centralization, ensuring mining remains accessible to everyone worldwide.
+
+---
+
+### **3. Sustainable Infinite Supply**  
+- Rewards are fixed at **1,000 GMC per block**.  
+- No halving events. Supply remains infinite, modeled after **DogeCoin** to sustain global adoption.  
+
+---
+
+### **4. Integrated Smart Contracts**  
+Supports **LVMP-based smart contracts** for:  
+- **Asset Creation**: Launch and manage fungible/non-fungible tokens (NFTs).  
+- **Data Transfers**: Seamless on-chain data transactions.  
+- **NFT Marketplace**: Mint, transfer, and trade NFTs on the GMC blockchain.  
+- **Decentralized Email**: Secure messaging embedded into the blockchain network.  
+
+---
+
+### **5. Decentralized DNS (.bit Domains)**  
+- **.bit domains** provide decentralized alternatives to traditional domain names.  
+- Designed for seamless Web3 integration.  
+- Planned partnerships with **Namecoin** and **Nervos Network** to enhance interoperability.  
+
+---
+
+## **Technical Specifications**  
+
+| **Parameter**          | **Specification**                     |  
+|-------------------------|---------------------------------------|  
+| **Consensus Algorithm** | GhostRider with DAG-based optimization |  
+| **Block Reward**        | 1,000 GMC per block (fixed, infinite) |  
+| **Mining Method**       | CPU-only, 1,000 KH/s kill switch      |  
+| **Supply Model**        | Infinite supply, Doge-like            |  
+| **Smart Contracts**     | LVMP-based; supports assets, NFTs, data transfers |  
+| **DNS Integration**     | .bit domains for decentralized naming |  
+
+---
+
+## **Fairness Mechanism**  
+GMC ensures mining remains **fair and decentralized**:  
+- **CPU-Only Enforcement**: GPUs and ASICs are rejected from the network.  
+- **Anti-Overpower Kill Switch**: Addresses exceeding **1,000 KH/s** are temporarily disabled.  
+- Keeps mining open to all individuals globally without allowing centralized control.
+
+---
+
+## **Conclusion**  
+Elbanna.org’s GMC creates a **timeless, decentralized, and fair blockchain** built for the modern era. By removing block time, integrating orphan-free DAG speed, and prioritizing global accessibility with CPU-only mining, GMC redefines blockchain sustainability and scalability. Smart contracts, decentralized DNS, and infinite supply empower users worldwide to adopt **God Money Coin** for real-world applications.  
+
+Join the decentralized future. Visit **[Elbanna.org](https://elbanna.org)** today.  
+
+---
+
+## **Roadmap**  
+
+- **Phase 1**: GhostRider + DAG optimization for real-time consensus.  
+- **Phase 2**: Implementation of LVMP-based smart contracts and .bit domains.  
+- **Phase 3**: Collaboration with **Namecoin** and **Nervos Network** for decentralized DNS.  
+- **Phase 4**: Launch GMC ecosystem: wallets, NFT marketplace, and data transfers.  
+
+---
+
+## **Resources**  
+
+- **Website**: [Elbanna.org](https://elbanna.org)  
+- **GitHub**: Coming soon  # **Elbanna.org - God Money Coin (GMC)**  
+
+## **Abstract**  
+Elbanna.org introduces **God Money Coin (GMC)**, a decentralized blockchain designed for fairness, speed, and infinite scalability. By utilizing the **GhostRider algorithm**, enhanced with **Kaspa's DAG-based speed** and orphan-free architecture, GMC delivers real-time transaction finality without block delays. The consensus model removes the concept of "block time" entirely, enabling seamless performance.
+
+To ensure sustainability and fairness, GMC employs:  
+- **CPU-only mining** with a **kill switch** for miners exceeding **1,000 KH/s**.  
+- A **Doge-like supply model** with infinite rewards fixed at **1,000 GMC per block**.  
+- Integrated **smart contracts**, asset creation, NFTs, data transfers, and secure decentralized email.  
+
+GMC also features **.bit decentralized DNS domains**, improving decentralization and Web3 usability. Partnerships are planned with **Namecoin** and **Nervos Network** to enhance adoption.  
+
+---
+
+## **Core Features**  
+
+### **1. Real-Time, Orphan-Free Consensus**  
+- Built on the **GhostRider algorithm**, optimized with **Kaspa's DAG technology**.  
+- Ensures transactions are processed in **real time** with zero orphan blocks.  
+- The removal of "block time" creates a timeless, high-speed consensus mechanism.
+
+---
+
+### **2. Fair and Decentralized Mining**  
+- **CPU-only Mining**: ASICs and GPUs are **automatically rejected**.  
+- **Kill Switch**: Mining addresses exceeding **1,000 KH/s** are disabled to maintain fairness.  
+- Designed to prevent centralization, ensuring mining remains accessible to everyone worldwide.
+
+---
+
+### **3. Sustainable Infinite Supply**  
+- Rewards are fixed at **1,000 GMC per block**.  
+- No halving events. Supply remains infinite, modeled after **DogeCoin** to sustain global adoption.  
+
+---
+
+### **4. Integrated Smart Contracts**  
+Supports **LVMP-based smart contracts** for:  
+- **Asset Creation**: Launch and manage fungible/non-fungible tokens (NFTs).  
+- **Data Transfers**: Seamless on-chain data transactions.  
+- **NFT Marketplace**: Mint, transfer, and trade NFTs on the GMC blockchain.  
+- **Decentralized Email**: Secure messaging embedded into the blockchain network.  
+
+---
+
+### **5. Decentralized DNS (.bit Domains)**  
+- **.bit domains** provide decentralized alternatives to traditional domain names.  
+- Designed for seamless Web3 integration.  
+- Planned partnerships with **Namecoin** and **Nervos Network** to enhance interoperability.  
+
+---
+
+## **Technical Specifications**  
+
+| **Parameter**          | **Specification**                     |  
+|-------------------------|---------------------------------------|  
+| **Consensus Algorithm** | GhostRider with DAG-based optimization |  
+| **Block Reward**        | 1,000 GMC per block (fixed, infinite) |  
+| **Mining Method**       | CPU-only, 1,000 KH/s kill switch      |  
+| **Supply Model**        | Infinite supply, Doge-like            |  
+| **Smart Contracts**     | LVMP-based; supports assets, NFTs, data transfers |  
+| **DNS Integration**     | .bit domains for decentralized naming |  
+
+---
+
+## **Fairness Mechanism**  
+GMC ensures mining remains **fair and decentralized**:  
+- **CPU-Only Enforcement**: GPUs and ASICs are rejected from the network.  
+- **Anti-Overpower Kill Switch**: Addresses exceeding **1,000 KH/s** are temporarily disabled.  
+- Keeps mining open to all individuals globally without allowing centralized control.
+
+---
+
+## **Conclusion**  
+Elbanna.org’s GMC creates a **timeless, decentralized, and fair blockchain** built for the modern era. By removing block time, integrating orphan-free DAG speed, and prioritizing global accessibility with CPU-only mining, GMC redefines blockchain sustainability and scalability. Smart contracts, decentralized DNS, and infinite supply empower users worldwide to adopt **God Money Coin** for real-world applications.  
+
+Join the decentralized future. Visit **[Elbanna.org](https://elbanna.org)** today.  
+
+---
+
+## **Roadmap**  
+
+- **Phase 1**: GhostRider + DAG optimization for real-time consensus.  
+- **Phase 2**: Implementation of LVMP-based smart contracts and .bit domains.  
+- **Phase 3**: Collaboration with **Namecoin** and **Nervos Network** for decentralized DNS.  
+- **Phase 4**: Launch GMC ecosystem: wallets, NFT marketplace, and data transfers.  
+
+---
+
+## **Resources**  
+
+- **Website**: [Elbanna.org](https://elbanna.org)  
+- **GitHub**: Coming soon  
+- **Community**: To be announced
+
+- **Community**: To be announced
+, decentralized DNS, and infinite supply empower users worldwide to adopt **God Money Coin** for real-world applications.  
+
+Join the decentralized future. Visit **[Elbanna.org](https://elbanna.org)** today.  
+
+---
+
+## **Roadmap**  
+
+- **Phase 1**: GhostRider + DAG optimization for real-time consensus.  
+- **Phase 2**: Implementation of LVMP-based smart contracts and .bit domains.  
+- **Phase 3**: Collaboration with **Namecoin** and **Nervos Network** for decentralized DNS.  
+- **Phase 4**: Launch GMC ecosystem: wallets, NFT marketplace, and data transfers.  
+
+---
+
+## **Resources**  
+
+- **Website**: [Elbanna.org](https://elbanna.org)  
+- **GitHub**: Coming soon  
+- **Community**: To be announced
